@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Diabetic Retinopathy Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetic Retinopathy Project | Haneef Shaik</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- SAME NAVBAR AS MAIN PAGE -->
-  <nav>
-    <h2>Haneef Shaik</h2>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#skills">Skills</a>
-      <a href="index.html#projects">Projects</a>
-      <a href="assets/Haneef_Shaik_Resume.pdf" target="_blank">Resume</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </nav>
+<nav>
+  <h2>Haneef Shaik</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="assets/Haneef_Shaik_Resume.pdf" target="_blank">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
 
-  <!-- PROJECT CONTENT -->
-  <section class="card">
+<main class="project-page">
 
+  <section class="project-hero-card">
+    <p class="project-label">AI / Deep Learning Project</p>
     <h1>AI-Based Diabetic Retinopathy Detection</h1>
-
-    <p>
-      Developed a deep learning system to detect diabetic retinopathy from retinal images,
-      supporting both binary (DR vs No DR) and multi-class classification.
+    <p class="project-summary">
+      Built a deep learning medical imaging system to detect diabetic retinopathy from retinal images,
+      supporting both binary classification and multi-class severity staging.
     </p>
-
-    <h3>Tools & Technologies</h3>
-    <ul>
-      <li>Python</li>
-      <li>TensorFlow</li>
-      <li>ResNet50, EfficientNet, DenseNet</li>
-      <li>Kaggle Dataset</li>
-    </ul>
-
-    <h3>Key Results</h3>
-    <ul>
-      <li>95.2% accuracy</li>
-      <li>F1-score: 0.95 | AUC-ROC: 0.98</li>
-      <li>Improved multi-class accuracy from 91% → 95.6%</li>
-    </ul>
-
-    <h3>Business Impact</h3>
-    <p>
-      Designed for early screening of diabetic retinopathy with high recall,
-      reducing false negatives and improving clinical reliability.
-    </p>
-
-    <a href="https://github.com/YOUR-REPO" target="_blank">
-      View GitHub Code →
-    </a>
-    <a href="index.html#projects" class="btn primary">
-      ← Back to Projects
-    </a>
-
   </section>
+
+  <section class="project-block">
+    <h2>Tools & Technologies</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>TensorFlow</span>
+      <span>ResNet50</span>
+      <span>EfficientNetB3</span>
+      <span>DenseNet121</span>
+      <span>SMOTE</span>
+      <span>Kaggle Dataset</span>
+    </div>
+  </section>
+
+  <section class="project-block">
+    <h2>Key Results</h2>
+    <div class="metrics">
+      <div class="metric-card">
+        <h3>95.2%</h3>
+        <p>Binary classification accuracy</p>
+      </div>
+      <div class="metric-card">
+        <h3>0.95</h3>
+        <p>F1-score for DR detection</p>
+      </div>
+      <div class="metric-card">
+        <h3>0.98</h3>
+        <p>AUC-ROC score</p>
+      </div>
+      <div class="metric-card">
+        <h3>95.6%</h3>
+        <p>Multi-class severity accuracy</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-block">
+    <h2>What I Did</h2>
+    <ul>
+      <li>Developed CNN models using ResNet50, EfficientNetB3, and DenseNet121.</li>
+      <li>Combined models into a 3-model ensemble to improve robustness and generalization.</li>
+      <li>Handled class imbalance using SMOTE to improve minority class prediction.</li>
+      <li>Used data augmentation, focal loss, fine-tuning, EarlyStopping, and ReduceLROnPlateau.</li>
+    </ul>
+  </section>
+
+  <section class="project-block">
+    <h2>Impact</h2>
+    <p>
+      Designed with a focus on high recall to reduce false negatives, making the system more suitable
+      for early diabetic retinopathy screening workflows.
+    </p>
+  </section>
+
+  <div class="project-actions">
+    <a href="https://github.com/YOUR-REPO" target="_blank" class="btn primary">View GitHub Code</a>
+    <a href="index.html#projects" class="btn light">← Back to Projects</a>
+  </div>
+
+</main>
 
 </body>
 </html>
