@@ -92,7 +92,7 @@ nav a:hover {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
 }
 
 .primary {
@@ -105,8 +105,13 @@ nav a:hover {
   color: white;
 }
 
+.light {
+  background: #e0f2fe;
+  color: #075985;
+}
+
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .card {
@@ -155,7 +160,7 @@ nav a:hover {
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 24px;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
 }
 
 .project-card:hover {
@@ -196,6 +201,7 @@ nav a:hover {
 }
 
 /* PROJECT DETAIL PAGES */
+
 .project-page {
   min-height: calc(100vh - 70px);
   padding: 60px 8%;
@@ -212,23 +218,37 @@ nav a:hover {
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
 }
 
-.project-label {
-  color: #0284c7;
-  font-weight: 800;
-  margin-bottom: 14px;
+.project-hero-card {
+  background: linear-gradient(135deg, #07111f, #0f3c6e);
+  color: white;
 }
 
 .project-hero-card h1 {
   font-size: 44px;
-  color: #07111f;
+  color: white;
   margin-bottom: 18px;
   line-height: 1.15;
+}
+
+.project-label {
+  color: #7dd3fc;
+  font-weight: 800;
+  margin-bottom: 14px;
 }
 
 .project-summary {
   font-size: 18px;
   line-height: 1.8;
-  color: #334155;
+  color: #dbeafe;
+}
+
+.project-block {
+  transition: 0.25s ease;
+}
+
+.project-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
 }
 
 .project-block h2 {
@@ -248,12 +268,14 @@ nav a:hover {
   border: 1px solid #e2e8f0;
   padding: 22px;
   border-radius: 16px;
+  text-align: center;
 }
 
 .metric-card h3 {
-  font-size: 28px;
+  font-size: 34px;
   color: #0284c7;
   margin-bottom: 8px;
+  font-weight: 800;
 }
 
 .metric-card p,
@@ -273,14 +295,11 @@ nav a:hover {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-}
-
-.light {
-  background: #e0f2fe;
-  color: #075985;
+  justify-content: space-between;
 }
 
 /* MOBILE */
+
 @media (max-width: 700px) {
   nav {
     flex-direction: column;
@@ -325,5 +344,9 @@ nav a:hover {
 
   .project-hero-card h1 {
     font-size: 32px;
+  }
+
+  .project-actions {
+    justify-content: flex-start;
   }
 }
