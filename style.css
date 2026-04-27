@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #f4f7fb;
@@ -32,15 +36,20 @@ nav a {
   text-decoration: none;
   margin-left: 24px;
   font-size: 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #38bdf8;
 }
 
 .hero {
-  min-height: 520px;
+  min-height: 580px;
   display: flex;
   align-items: center;
-  padding: 80px 8%;
+  padding: 90px 8%;
   background:
-    linear-gradient(135deg, rgba(7,17,31,0.95), rgba(15,52,96,0.9)),
+    linear-gradient(135deg, rgba(7,17,31,0.95), rgba(15,52,96,0.88)),
     url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80");
   background-size: cover;
   background-position: center;
@@ -48,13 +57,14 @@ nav a {
 }
 
 .hero-content {
-  max-width: 760px;
+  max-width: 800px;
 }
 
 .tag {
   color: #7dd3fc;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 18px;
+  letter-spacing: 0.4px;
 }
 
 .hero h1 {
@@ -73,6 +83,7 @@ nav a {
 .buttons {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -92,10 +103,14 @@ nav a {
   color: white;
 }
 
+.btn:hover {
+  transform: translateY(-2px);
+}
+
 .card {
   width: 84%;
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 45px auto;
   background: white;
   padding: 38px;
   border-radius: 18px;
@@ -151,6 +166,10 @@ nav a {
   color: #0f172a;
 }
 
+.project-card p {
+  margin-bottom: 10px;
+}
+
 .project-card a,
 .contact a {
   display: inline-block;
@@ -161,8 +180,17 @@ nav a {
   text-decoration: none;
 }
 
+.project-card a:hover,
+.contact a:hover {
+  text-decoration: underline;
+}
+
 .contact {
   margin-bottom: 70px;
+}
+
+.contact-links {
+  margin-top: 10px;
 }
 
 @media (max-width: 700px) {
@@ -172,12 +200,25 @@ nav a {
     padding: 18px;
   }
 
+  nav div {
+    margin-top: 10px;
+  }
+
   nav a {
-    margin: 10px;
+    margin: 8px;
+    display: inline-block;
+  }
+
+  .hero {
+    padding: 70px 6%;
   }
 
   .hero h1 {
     font-size: 40px;
+  }
+
+  .intro {
+    font-size: 17px;
   }
 
   .card {
