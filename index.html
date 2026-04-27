@@ -1,52 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haneef Shaik | Data Analyst</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>Haneef Shaik</h1>
-    <p>Data Analyst | SQL • Python • Power BI • Tableau | Azure (ADF)</p>
-    <a href="#projects">View Projects</a>
-  </header>
+  <nav>
+    <h2>Haneef Shaik</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <section>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="tag">Data Analyst • Business Analytics • Visualization</p>
+      <h1>Turning Data Into Business Insights</h1>
+      <p class="intro">
+        M.S. Data Science graduate at UMBC skilled in SQL, Python, Power BI, Tableau,
+        and Azure Data Factory. I build dashboards, analyze business problems,
+        and communicate insights clearly.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="card">
     <h2>About Me</h2>
     <p>
-      I am a Data Analyst with an M.S. in Data Science from UMBC.
-      I work with SQL, Python, Power BI, and Tableau to analyze data,
-      build dashboards, and turn business problems into actionable insights.
+      I am an aspiring Data Analyst focused on solving business problems using data.
+      My work combines data cleaning, SQL analysis, Python-based exploration, and
+      dashboard storytelling to help teams make better decisions.
     </p>
   </section>
 
-  <section>
+  <section id="skills" class="card">
     <h2>Skills</h2>
-    <p>SQL • Python • Excel • Power BI • Tableau • Azure Data Factory • Data Cleaning • EDA • Business Analytics</p>
+    <div class="skills">
+      <span>SQL</span>
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>Excel</span>
+      <span>Power BI</span>
+      <span>Tableau</span>
+      <span>Azure Data Factory</span>
+      <span>Data Cleaning</span>
+      <span>EDA</span>
+      <span>Business Analytics</span>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="card">
     <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Sales Analytics Dashboard</h3>
-      <p>Analyzed sales data to identify revenue trends, top-performing products, and business growth opportunities.</p>
-      <p><strong>Tools:</strong> SQL, Python, Power BI</p>
-    </div>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Sales Analytics Dashboard</h3>
+        <p>
+          Analyzed sales data to identify revenue trends, top-performing products,
+          and business growth opportunities.
+        </p>
+        <p><strong>Tools:</strong> SQL, Python, Power BI</p>
+        <a href="#">View Project →</a>
+      </div>
 
-    <div class="project">
-      <h3>Customer Churn Analysis</h3>
-      <p>Explored customer behavior data to identify churn patterns and recommend retention strategies.</p>
-      <p><strong>Tools:</strong> Python, SQL, Tableau</p>
+      <div class="project-card">
+        <h3>Customer Churn Analysis</h3>
+        <p>
+          Explored customer behavior data to identify churn patterns and recommend
+          retention strategies.
+        </p>
+        <p><strong>Tools:</strong> Python, SQL, Tableau</p>
+        <a href="#">View Project →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Financial Analytics Report</h3>
+        <p>
+          Built an analytics report to evaluate business performance using KPIs,
+          trends, and visual insights.
+        </p>
+        <p><strong>Tools:</strong> Excel, SQL, Tableau</p>
+        <a href="#">View Project →</a>
+      </div>
     </div>
   </section>
 
-  <section>
+  <section id="contact" class="card contact">
     <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/haneef-shaik-80b0b81a0</p>
-    <p>GitHub: github.com/YOUR-GITHUB-USERNAME</p>
+    <p>Let’s connect for data analyst, business analyst, or analytics roles.</p>
+    <a href="mailto:your-email@example.com">Email</a>
+    <a href="https://www.linkedin.com/in/haneef-shaik-80b0b81a0/">LinkedIn</a>
+    <a href="https://github.com/haneefshaik42">GitHub</a>
   </section>
 
 </body>
