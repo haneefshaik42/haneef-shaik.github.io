@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stock Price Prediction</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Prediction | Haneef Shaik</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
-    <h2>Haneef Shaik</h2>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#skills">Skills</a>
-      <a href="index.html#projects">Projects</a>
-      <a href="assets/Haneef_Shaik_Resume.pdf" target="_blank">Resume</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
-  </nav>
+<nav>
+  <h2>Haneef Shaik</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="assets/Haneef_Shaik_Resume.pdf" target="_blank">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
 
-  <section class="card">
+<main class="project-page">
 
+  <section class="project-hero-card">
+    <p class="project-label">Time Series / Finance Project</p>
     <h1>Stock Price Prediction Using LSTM & GRU</h1>
-
-    <p>
-      Built time-series forecasting models using LSTM and GRU to predict stock prices
-      from historical market data.
+    <p class="project-summary">
+      Built deep learning models to forecast stock prices using historical financial data,
+      enabling short-term prediction and trend analysis.
     </p>
-
-    <h3>Tools & Technologies</h3>
-    <ul>
-      <li>Python</li>
-      <li>TensorFlow</li>
-      <li>Pandas</li>
-      <li>Yahoo Finance Data</li>
-    </ul>
-
-    <h3>Key Results</h3>
-    <ul>
-      <li>Generated reliable 10-day forecasts</li>
-      <li>GRU achieved faster training with similar accuracy</li>
-      <li>Improved short-term prediction consistency</li>
-    </ul>
-
-    <h3>Business Impact</h3>
-    <p>
-      Helps support short-term investment decisions by providing predictive insights
-      based on historical financial data.
-    </p>
-
-    <a href="https://github.com/YOUR-REPO" target="_blank">
-      View GitHub Code →
-    </a>
-    <a href="index.html#projects" class="btn primary">
-      ← Back to Projects
-    </a>
-
   </section>
+
+  <section class="project-block">
+    <h2>Tools & Technologies</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>TensorFlow</span>
+      <span>Pandas</span>
+      <span>LSTM</span>
+      <span>GRU</span>
+      <span>Yahoo Finance</span>
+    </div>
+  </section>
+
+  <section class="project-block">
+    <h2>Key Results</h2>
+    <div class="metrics">
+      <div class="metric-card">
+        <h3>10 Days</h3>
+        <p>Forecast horizon</p>
+      </div>
+      <div class="metric-card">
+        <h3>GRU</h3>
+        <p>Faster training than LSTM</p>
+      </div>
+      <div class="metric-card">
+        <h3>Stable</h3>
+        <p>Consistent predictions</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-block">
+    <h2>What I Did</h2>
+    <ul>
+      <li>Preprocessed time-series data using normalization and sequence creation.</li>
+      <li>Built LSTM and GRU models for stock prediction.</li>
+      <li>Performed time-series validation and testing.</li>
+      <li>Compared model performance across architectures.</li>
+    </ul>
+  </section>
+
+  <section class="project-block">
+    <h2>Impact</h2>
+    <p>
+      Provides short-term predictive insights that can assist in financial
+      decision-making and investment strategy.
+    </p>
+  </section>
+
+  <div class="project-actions">
+    <a href="https://github.com/YOUR-REPO" target="_blank" class="btn primary">View GitHub Code</a>
+    <a href="index.html#projects" class="btn light">← Back to Projects</a>
+  </div>
+
+</main>
 
 </body>
 </html>
