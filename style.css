@@ -87,10 +87,12 @@ nav a:hover {
 }
 
 .btn {
+  display: inline-block;
   padding: 13px 22px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 700;
+  transition: 0.2s ease;
 }
 
 .primary {
@@ -193,39 +195,8 @@ nav a:hover {
   margin-top: 10px;
 }
 
-@media (max-width: 700px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 18px;
-  }
-
-  nav div {
-    margin-top: 10px;
-  }
-
-  nav a {
-    margin: 8px;
-    display: inline-block;
-  }
-
-  .hero {
-    padding: 70px 6%;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .intro {
-    font-size: 17px;
-  }
-
-  .card {
-    width: 92%;
-    padding: 26px;
-  }
-  .project-page {
+/* PROJECT DETAIL PAGES */
+.project-page {
   min-height: calc(100vh - 70px);
   padding: 60px 8%;
   background: #f4f7fb;
@@ -309,7 +280,40 @@ nav a:hover {
   color: #075985;
 }
 
+/* MOBILE */
 @media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 18px;
+  }
+
+  nav div {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 8px;
+    display: inline-block;
+  }
+
+  .hero {
+    padding: 70px 6%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .intro {
+    font-size: 17px;
+  }
+
+  .card {
+    width: 92%;
+    padding: 26px;
+  }
+
   .project-page {
     padding: 35px 5%;
   }
@@ -322,5 +326,4 @@ nav a:hover {
   .project-hero-card h1 {
     font-size: 32px;
   }
-}
 }
